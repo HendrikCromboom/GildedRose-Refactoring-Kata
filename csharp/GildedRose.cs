@@ -9,6 +9,10 @@ namespace csharp
         {
             this.Items = Items;
         }
+        public IList<Item> getItems()
+        {
+            return this.Items;
+        }
 
         public void UpdateQuality()
         {

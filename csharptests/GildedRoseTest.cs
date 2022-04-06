@@ -1,12 +1,13 @@
-﻿using NUnit.Framework;
+using csharp;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 
-namespace csharp
+namespace csharptests
 {
-    [TestFixture]
+    [TestClass]
     public class GildedRoseTest
     {
-        [Test]
+        [TestMethod]
         public void updateQuality_foo_foo()
         {
             IList<Item> Items = new List<Item> { new Item { Name = "foo", SellIn = 0, Quality = 0 } };
