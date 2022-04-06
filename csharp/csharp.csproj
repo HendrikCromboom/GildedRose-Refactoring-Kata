@@ -61,8 +61,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GildedRose.cs" />
-    <Compile Include="Item.cs" />
+    <Compile Include="ClassLibrary\ExtendedItem.cs" />
+    <Compile Include="BusinessLogic\GildedRose.cs" />
+    <Compile Include="ClassLibrary\Item.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

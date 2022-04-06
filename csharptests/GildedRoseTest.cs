@@ -55,10 +55,10 @@ namespace csharptests
         [TestMethod]
         public void updateQuality_SulfurasSellIn10Quality10_Sellin10Quality10()
         {
-            IList<Item> Items = new List<Item> { new Item { Name = "Sulfuras, Hand of Ragnaros", SellIn = 10, Quality = 10 } };
+            IList<Item> Items = new List<Item> { new Item { Name = "Sulfuras, Hand of Ragnaros", SellIn = 10, Quality = 80 } };
             GildedRose app = new GildedRose(Items);
             app.UpdateQuality();
-            Assert.AreEqual("Sulfuras, Hand of Ragnaros, 10, 10", app.getItems()[0].ToString()); // "Sulfuras", being a legendary item, never has to be sold or decreases in Quality
+            Assert.AreEqual("Sulfuras, Hand of Ragnaros, 10, 80", app.getItems()[0].ToString()); // "Sulfuras", being a legendary item, never has to be sold or decreases in Quality
         }
 
         [TestMethod]
