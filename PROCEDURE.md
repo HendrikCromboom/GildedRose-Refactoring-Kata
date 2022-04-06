@@ -2,7 +2,11 @@
 
 [X]  Running init tests (failed)
 
-[] Make the initial code compliant to the existing tests
+[X] Make the initial code compliant to the existing tests
+
+[X] Decided to remove approval as a the framework for testing, it looks like an amazing framework but I feel like it would be overkill in this particular case
+
+[] Set up MTest (I just feel like a MTest enviroment ran on a seperate solution makes this more accesible)
 
 [] Write aditional tests to define the future architecture of the business case
 
