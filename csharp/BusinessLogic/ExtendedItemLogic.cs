@@ -57,6 +57,9 @@ namespace csharp.BusinessLogic
                 if (item.ItemType == Type.aged_brie)
                 {
                     item.Quality += multiplier;
+                }else if(item.ItemType == Type.conjured)
+                {
+                    item.Quality -= multiplier * 2;
                 }
                 else if (item.ItemType == Type.normal)
                 {

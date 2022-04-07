@@ -14,6 +14,7 @@ namespace csharp
             legendary,
             aged_brie,
             backstage_ticket,
+            conjured
         }
 
         public Type ItemType { get; set; }
@@ -32,6 +33,10 @@ namespace csharp
 
                 case "Aged Brie":
                     ItemType = Type.aged_brie;
+                    break;
+
+                case "Conjured Mana Cake":
+                    ItemType = Type.conjured;
                     break;
 
                 default:
