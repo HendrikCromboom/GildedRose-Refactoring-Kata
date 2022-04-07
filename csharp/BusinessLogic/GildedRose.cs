@@ -18,7 +18,7 @@ namespace csharp
         }
         public void UpdateQuality()
         {
-            _extendedItemLogic = new ExtendedItemLogic();
+            _extendedItemLogic = new ExtendedItemLogic(); // I would do this with dependency injection but I am going to stay away from touching the Program file or adding any libraries in this excercise
             for (var i = 0; i < Items.Count; i++)
             {
                 ExtendedItem item = _extendedItemLogic.ConvertToExtendedItem(Items[i]);
