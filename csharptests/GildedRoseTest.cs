@@ -97,7 +97,22 @@ namespace csharptests
             Assert.AreEqual("Backstage passes to a TAFKAL80ETC concert, -1, 0", app.getItems()[0].ToString()); // Quality drops to 0 after the concert
         }
 
+        [TestMethod]
+        public void updateQuality_ConjuredSellIn10Quality10_Sellin9Quality8()
+        {
+            IList<Item> Items = new List<Item> { new Item { Name = "Conjured Mana Cake", SellIn = 10, Quality = 10 } };
+            GildedRose app = new GildedRose(Items);
+            app.UpdateQuality();
+            Assert.AreEqual("Conjured Mana Cake, 9, 8", app.getItems()[0].ToString()); // "Conjured" items degrade in Quality twice as fast as normal items
+        }
 
-
+        [TestMethod]
+        public void updateQuality_ConjuredSellIn0Quality10_SellinMinus1Quality6()
+        {
+            IList<Item> Items = new List<Item> { new Item { Name = "Conjured Mana Cake", SellIn = 0, Quality = 10 } };
+            GildedRose app = new GildedRose(Items);
+            app.UpdateQuality();
+            Assert.AreEqual("Conjured Mana Cake, -1, 6", app.getItems()[0].ToString()); // "Conjured" items degrade in Quality twice as fast as normal items -> after date scenario
+        }
     }
 }
