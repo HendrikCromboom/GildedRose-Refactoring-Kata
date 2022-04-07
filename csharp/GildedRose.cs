@@ -11,14 +11,13 @@ namespace csharp
         {
             this.Items = Items;
         }
-
         public IList<Item> getItems()
         {
             return this.Items;
         }
         public void UpdateQuality()
         {
-            _extendedItemLogic = new ExtendedItemLogic(); // I would do this with dependency injection but I am going to stay away from touching the Program file or adding any libraries in this excercise
+            _extendedItemLogic = new ExtendedItemLogic();
             for (var i = 0; i < Items.Count; i++)
             {
                 ExtendedItem item = _extendedItemLogic.ConvertToExtendedItem(Items[i]);

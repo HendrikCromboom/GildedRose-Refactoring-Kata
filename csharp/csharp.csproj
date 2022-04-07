@@ -63,7 +63,7 @@
   <ItemGroup>
     <Compile Include="BusinessLogic\ExtendedItemLogic.cs" />
     <Compile Include="ClassLibrary\ExtendedItem.cs" />
-    <Compile Include="BusinessLogic\GildedRose.cs" />
+    <Compile Include="GildedRose.cs" />
     <Compile Include="ClassLibrary\Item.cs" />
     <Compile Include="Interfaces\IExtendedItemLogic.cs" />
     <Compile Include="Program.cs" />
