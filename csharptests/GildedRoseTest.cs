@@ -114,5 +114,14 @@ namespace csharptests
             app.UpdateQuality();
             Assert.AreEqual("Conjured Mana Cake, -1, 6", app.getItems()[0].ToString()); // "Conjured" items degrade in Quality twice as fast as normal items -> after date scenario
         }
+        [TestMethod]
+        public void updateQuality_CobinedTest()
+        {
+            IList<Item> Items = new List<Item> { new Item { Name = "Conjured Mana Cake", SellIn = 0, Quality = 10 }, new Item { Name = "Conjured Mana Cake", SellIn = 0, Quality = 10 } };
+            GildedRose app = new GildedRose(Items);
+            app.UpdateQuality();
+            Assert.AreEqual("Conjured Mana Cake, -1, 6", app.getItems()[1].ToString()); // "Conjured" items degrade in Quality twice as fast as normal items -> after date scenario
+        }
+
     }
 }
