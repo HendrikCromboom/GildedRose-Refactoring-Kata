@@ -8,14 +8,12 @@
 
 [X] Set up MTest (I just feel like a MTest enviroment ran on a seperate solution makes this more accesible)
 
-[] Write aditional tests to define the future architecture of the business case
+[X] Write aditional tests to define the future architecture of the business case
 
-[] Refactor code
-
-    -Probably will seperate here depending on the archetypes that I touch(abstraction, etc)
+[X] Refactor code
     
-[] Pass the refactored code
+[X] Pass the refactored code
 
-[] Check for best practices and code review
+[X] Check for best practices and code review
 
-[] Final test
+[X] Final test
